@@ -4,12 +4,11 @@
 
     using Microsoft.VisualStudio.Settings;
     using PiotrTrzpil.VisualMutator_VSPackage.Model;
-    using UsefulTools.Core;
     using UsefulTools.ExtensionMethods;
 
     #endregion
 
-    public class VisualStudioSettingsProvider : ISettingsManager
+    public class VisualStudioSettingsProvider : UsefulTools.Core.ISettingsManager
     {
         private readonly VisualStudioConnection _hostEnviromentConnection;
 

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5595361A-79C0-4ADD-A571-4453346CB09E}"
 	ProjectSection(SolutionItems) = preProject
@@ -11,6 +11,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E49B9DFB-9857-4BBA-A592-BDC2DF6DC834}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{A9579592-2FCF-46DE-9585-9AB888FB3A72}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SampleTestProjectsForTestDiscoveryAndExecution", "SampleTestProjectsForTestDiscoveryAndExecution", "{CAC1FEE8-FECC-412E-8DE9-6C0C30D277C5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SonarQube", "SonarQube", "{24D5BB4F-C6FA-4E85-855D-C80F1D753231}"
+	ProjectSection(SolutionItems) = preProject
+		SonarQube\SolutionBinding.sqconfig = SonarQube\SolutionBinding.sqconfig
+		SonarQube\Visualmutator-pavzajCSharp.ruleset = SonarQube\Visualmutator-pavzajCSharp.ruleset
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualMutator.VSPackage", "VisualMutator.VSPackage\VisualMutator.VSPackage.csproj", "{BB64244A-C861-42A7-AE3D-6E4DDA9B2E7F}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -33,10 +43,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualMutator.Console", "Vi
 		{ED2443EA-AEFF-4EAF-8BED-4CFA8F721598} = {ED2443EA-AEFF-4EAF-8BED-4CFA8F721598}
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{A9579592-2FCF-46DE-9585-9AB888FB3A72}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SampleTestProjectsForTestDiscoveryAndExecution", "SampleTestProjectsForTestDiscoveryAndExecution", "{CAC1FEE8-FECC-412E-8DE9-6C0C30D277C5}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleLogic", "Tests\SampleTestProjectsForTestDiscoveryAndExecution\SampleLogic\SampleLogic.csproj", "{46BC2CBB-8F2D-489F-87FD-E2E943D5F5AB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleLogicNunit3Tests", "Tests\SampleTestProjectsForTestDiscoveryAndExecution\SampleLogicNunit3Tests\SampleLogicNunit3Tests.csproj", "{17973AB3-718D-4D9C-A0B9-19C5D96C8508}"
@@ -54,12 +60,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualMutator.Tests", "Test
 	ProjectSection(ProjectDependencies) = postProject
 		{505A7925-D494-4B7B-8176-DCA20D25EA61} = {505A7925-D494-4B7B-8176-DCA20D25EA61}
 		{17973AB3-718D-4D9C-A0B9-19C5D96C8508} = {17973AB3-718D-4D9C-A0B9-19C5D96C8508}
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SonarQube", "SonarQube", "{24D5BB4F-C6FA-4E85-855D-C80F1D753231}"
-	ProjectSection(SolutionItems) = preProject
-		SonarQube\SolutionBinding.sqconfig = SonarQube\SolutionBinding.sqconfig
-		SonarQube\Visualmutator-pavzajCSharp.ruleset = SonarQube\Visualmutator-pavzajCSharp.ruleset
 	EndProjectSection
 EndProject
 Global
@@ -227,6 +227,9 @@ Global
 		{A8502D08-C5FF-43F2-B01D-AF4D6BB1D32A} = {A9579592-2FCF-46DE-9585-9AB888FB3A72}
 		{81498B98-B208-44F7-AF7E-6E1583D47D88} = {A9579592-2FCF-46DE-9585-9AB888FB3A72}
 		{8FDC25E2-B546-4DF6-B2A6-EAF5CA33BD92} = {A9579592-2FCF-46DE-9585-9AB888FB3A72}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7CDFCBC9-BCEF-40A2-A639-D1B0B4CF8BE5}
 	EndGlobalSection
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = VisualMutator.vsmdi

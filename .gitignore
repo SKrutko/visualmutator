@@ -11,3 +11,13 @@ nunitconsole
 .sonarqube
 /nunit3TestResult.xml
 /nunit2TestResult.xml
+
+\.vs/VisualMutator/v15/sqlite3/storage\.ide
+
+\.vs/VisualMutator/v15/\.suo
+
+\.vs/VisualMutator/v15/sqlite3/
+
+\.vs/VisualMutator/v15/
+
+\.axoCover/
