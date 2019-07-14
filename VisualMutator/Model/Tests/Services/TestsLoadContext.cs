@@ -9,12 +9,19 @@
         private readonly string _frameworkName;
         private readonly List<TestNodeClass> _classNodes;
         private readonly List<TestNodeNamespace> _namespaces;
+        private readonly string _assemblyName; //TODO: assembly name
 
-        public TestsLoadContext(string frameworkName, List<TestNodeClass> classNodes)
+        public TestsLoadContext(string frameworkName, string assemblyName, List<TestNodeClass> classNodes)
         {
             this._frameworkName = frameworkName;
+            _assemblyName = assemblyName;
             _classNodes = classNodes;
             _namespaces = GroupTestClasses(_classNodes).ToList();
+        }
+
+        public string AssemblyName()
+        {
+            return _assemblyName; 
         }
 
         public List<TestNodeClass> ClassNodes

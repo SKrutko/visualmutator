@@ -92,7 +92,9 @@
 
                 var classNodes = BuildTestTree(testRoot);
 
-                var context = new TestsLoadContext(FrameworkName, classNodes.ToList());
+                string assemblyName = Path.GetFileNameWithoutExtension(assemblyPath); //TODO
+
+                var context = new TestsLoadContext(FrameworkName, assemblyName, classNodes.ToList());
 
                 UnloadTests();
 

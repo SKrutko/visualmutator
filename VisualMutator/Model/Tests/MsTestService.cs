@@ -60,7 +60,8 @@
             if (classes.Count != 0)
             {
                 _log.Info("Tests loaded (" + classes.Count + " classes).");
-                return new May<TestsLoadContext>(new TestsLoadContext(FrameWorkName, classes));
+                string assemblyName = Path.GetFileNameWithoutExtension(assemblyPath); //TODO
+                return new May<TestsLoadContext>(new TestsLoadContext(FrameWorkName, assemblyName, classes));
             }
             else
             {
